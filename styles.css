@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* ----- NAV BAR -----*/
+
+.nav-cntr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-bar > a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-bar > a:hover {
+    text-decoration: underline;
+}
+
+nav > ul > img {
+    height: 91px;
+    width: 170px;
+    overflow: hidden;
+    margin: -25px 0px;
+}
+
+/* ----- COVER IMAGE ----- */
+
+.cover-cntr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 90vh;
+    background-image: url(/imgs/MTSS-Site-Weekly-Update-12-12-22---BANNER1_1.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+@media (max-width: 852px) {
+    .cover-cntr {
+        background-image: url(/imgs/MTSS-Site-Weekly-Update-12-12-22---BANNER1-MOBILE.jpg)
+    }
+}
+
+.cover {
+    width: 100%;
+}
+
