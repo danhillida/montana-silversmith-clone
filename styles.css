@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
     gap: 2rem;
 }
 
@@ -28,6 +29,12 @@ nav > ul > img {
     width: 170px;
     overflow: hidden;
     margin: -25px 0px;
+}
+
+@media (max-width: 980px) {
+    .nav-cntr {
+        font-size: 0.7rem;
+    }
 }
 
 /* ----- COVER IMAGE ----- */
