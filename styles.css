@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
 body {
@@ -50,9 +51,13 @@ nav > ul > a > img {
     margin-left: auto;
 }
 
-@media (max-width: 980px) {
+@media (min-width: 1950px) {
     .nav-cntr {
-        font-size: 0.7rem;
+        justify-content: center;
+    }
+
+    .end {
+        margin-left: unset;
     }
 }
 
@@ -82,8 +87,9 @@ header > div {
 }
 
 header > div > h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
     font-size: 6rem;
+    letter-spacing: -3px;
     color: white;
     text-shadow: #457b9d 1px 0 10px;
     margin: 0;
@@ -118,6 +124,34 @@ header > div > h2 {
     width: 100%;
 }
 
+@media (max-width: 940px) {
+    header > div > h1 {
+        font-size: 4rem
+    }
+
+    header > div > h2 {
+        font-size: 3rem
+    }
+
+    .faith {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header > div > h1 {
+        font-size: 2rem
+    }
+
+    header > div > h2 {
+        font-size: 2rem
+    }
+
+    .faith {
+        font-size: 3rem;
+    }
+}
+
 /* ----- PRODUCT CARDS ----- */
 .cards-cntr {
     display: flex;
@@ -126,7 +160,7 @@ header > div > h2 {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
-    padding: 7rem;
+    padding: 7rem 0;
 }
 
 .one {
@@ -183,6 +217,7 @@ header > div > h2 {
 @media (max-width: 1050px) {
     .cards-cntr {
         flex-direction: column;
+        /* padding: 7rem 0; */
     }
 
     .cards-cntr {
@@ -202,6 +237,12 @@ header > div > h2 {
     background-image: url(/imgs/parallax.jpg);
     background-attachment: fixed;
     background-size: cover;
+}
+
+@media (max-width: 650px) {
+    .cool-scrolly {
+        background-image: url(/imgs/mob-parallax.jpg);
+    }
 }
 
 /* ----- SOCIALS ----- */
@@ -229,6 +270,12 @@ header > div > h2 {
     height: 37px;
     width: 37px;
     transition:cubic-bezier(1, 0, 0, 1);
+}
+
+@media (max-width: 600px) {
+    .socials > h2 {
+        font-size: 1.3rem;
+    }
 }
 
 /* ----- FOOTER ----- */
