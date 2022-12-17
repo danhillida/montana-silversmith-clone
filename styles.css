@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 hr {
@@ -9,15 +12,16 @@ hr {
     height: 1px;
     background-color: #d4a373;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 /* ----- NAV BAR -----*/
 
 .nav-cntr {
     display: flex;
-    justify-content: center;
+    justify-content: Flex-start;
     align-items: center;
     font-size: 1rem;
     gap: 2rem;
@@ -34,11 +38,15 @@ hr {
     text-decoration: underline;
 }
 
-nav > ul > img {
+nav > ul > a > img {
     height: 70px;
     width: 170px;
     overflow: hidden;
     object-fit: contain;
+}
+
+.end {
+    margin-left: auto;
 }
 
 @media (max-width: 980px) {
@@ -47,20 +55,56 @@ nav > ul > img {
     }
 }
 
-/* ----- COVER IMAGE ----- */
+/* ----- HEADER ----- */
 
 .cover-cntr {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
-    min-height: 90vh;
+    min-height: 93vh;
     /* background-image: url(/imgs/MTSS-Site-Weekly-Update-12-12-22---BANNER1_1.jpg); */
-    background-image: url(/imgs/winter.jpg);
+    background-image: url(/imgs/rubys.jpg);
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
 
+}
+
+header > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+header > div > h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6rem;
+    color: white;
+    text-shadow: #457b9d 1px 0 10px;
+    margin: 0;
+    padding: 0px;
+}
+
+header > div > h2 {
+    font-family: Rye, Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    color: #d4a373;
+    text-shadow: #000 1px 0 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.faith {
+    font-family: Parisienne, sans-serif;
+    font-size: 9rem;
+    color: #457b9d;
+    text-shadow: #ffffBf 0 0 10px;
+    margin: 0;
+    padding: 0;
 }
 
 /* @media (max-width: 852px) {
@@ -123,7 +167,7 @@ nav > ul > img {
 }
 
 .order-btn:hover {
-    background: #f1faee;
+    background: #fff;
     color: #457b9d;
     cursor: pointer;
 }
@@ -154,17 +198,45 @@ nav > ul > img {
 
 .cool-scrolly {
     height: 50vh;
+    background-image: url(/imgs/parallax.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* ----- SOCIALS ----- */
 
 .socials {
     height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.space {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.social-icon {
+    height: 35px;
+    width: 35px;
+}
+
+.social-icon:hover {
+    height: 37px;
+    width: 37px;
+    transition:cubic-bezier(1, 0, 0, 1);
 }
 
 /* ----- FOOTER ----- */
 
 footer {
-    height: 8rem;
+    height: 7rem;
     background-color: #457b9d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
