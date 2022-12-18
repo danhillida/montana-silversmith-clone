@@ -133,7 +133,7 @@ hr {
     width: 100%;
     min-height: 93vh;
     /* background-image: url(/imgs/MTSS-Site-Weekly-Update-12-12-22---BANNER1_1.jpg); */
-    background-image: url(/imgs/rubys.jpg);
+    background-image: url(imgs/rubys.jpg);
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -305,14 +305,14 @@ header > div > h2 {
 
 .cool-scrolly {
     height: 50vh;
-    background-image: url(/imgs/parallax.jpg);
+    background-image: url(imgs/parallax.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
 
 @media (max-width: 800px) {
     .cool-scrolly {
-        background-image: url(/imgs/mob-parallax.jpg);
+        background-image: url(imgs/mob-parallax.jpg);
     }
 }
 
